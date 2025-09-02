@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Dictionary</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Online Dictionary</h1>
+    <div class="container">
+        <h1>📖 Online Dictionary</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Enter your word..." class="text" id="searchWord">
+            <button onclick="search()" class="btn">Search</button>
+        </div>
+        <div class="main">
+            <h3
+                style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.5rem; color: #1565c0;font-weight: 600;  margin: 20px 0;">
+                Word - <span style="font-weight: 400; color: #333;">hello</span>
+            </h3>
+            <h3
+                style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 1.5rem; color: #1565c0;font-weight: 600;  margin: 20px 0;">
+                definition - <span style="font-weight: 400; color: #333;"> "Hello!" or an equivalent greeting.</span>
+            </h3>
+            <audio controls
+                style="width: 300px;margin-top: 15px;border-radius: 10px;background: #f5f5f5;outline: none;">
+                <source src="https://api.dictionaryapi.dev/media/pronunciations/en/hello-au.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+
+        </div>
+    </div>
+    <script src="assets/js/home.js"></script>
 </body>
+
 </html>
